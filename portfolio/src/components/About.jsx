@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="sobre" className="py-32 px-6">
+    <section id="sobre" className=" px-6">
       <div className="max-w-7xl mx-auto">
 
         <h2 className="text-4xl font-bold mb-12">
@@ -17,8 +17,9 @@ export default function About() {
             <p className="text-zinc-400 leading-relaxed">
               Atualmente estou finalizando o curso de
               Informática para Internet e desenvolvendo
-              aplicações Full Stack utilizando React,
-              Node.js, Express e MySQL.
+              aplicações Full Stack - Backend, Frontend e, é claro, responsividade. Com uma paixão por tecnologia e
+              um compromisso com a excelência, busco criar
+              soluções inovadoras e eficientes.
             </p>
           </div>
 

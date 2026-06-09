@@ -8,24 +8,24 @@ export default function Navbar() {
           <span className="text-pink-500">&lt;/&gt;</span>
         </h1>
 
-        <ul className="hidden md:flex gap-8 text-sm">
-          <li>
+        <ul className="hidden md:flex gap-8 text-sm ">
+          <li className="hover:text-pink-400 hover:scale-110 transition-all duration-300">
             <a href="#inicio">Início</a>
           </li>
 
-          <li>
+          <li className="hover:text-pink-400 hover:scale-110 transition-all duration-300">
             <a href="#sobre">Sobre</a>
           </li>
 
-          <li>
+          <li className="hover:text-pink-400 hover:scale-110 transition-all duration-300">
             <a href="#tecnologias">Tecnologias</a>
           </li>
 
-          <li>
+          <li className="hover:text-pink-400 hover:scale-110 transition-all duration-300" >
             <a href="#projetos">Projetos</a>
           </li>
 
-          <li>
+          <li className="hover:text-pink-400 hover:scale-110 transition-all duration-300">
             <a href="#contato">Contato</a>
           </li>
         </ul>

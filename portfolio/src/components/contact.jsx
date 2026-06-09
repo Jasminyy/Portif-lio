@@ -1,10 +1,10 @@
 export default function Contact() {
   return (
-    <section id="contato" className="py-32 px-6">
+    <section id="contato" className="py-15 px-6">
       <div className="max-w-4xl mx-auto text-center">
 
         <h2 className="text-4xl font-bold mb-6">
-          Vamos conversar?
+          Deseja conversar?
         </h2>
 
         <p className="text-zinc-400 mb-10">
@@ -14,15 +14,15 @@ export default function Contact() {
 
         <div className="flex flex-wrap justify-center gap-4">
 
-          <button className="px-6 py-3 rounded-xl bg-pink-500">
+          <button className="border border-zinc-700 hover:border-pink-500 transition px-6 py-3 rounded-xl">
             GitHub
           </button>
 
-          <button className="px-6 py-3 rounded-xl border border-zinc-700">
+          <button className="border border-zinc-700 hover:border-pink-500 transition px-6 py-3 rounded-xl">
             LinkedIn
           </button>
 
-          <button className="px-6 py-3 rounded-xl border border-zinc-700">
+          <button className="border border-zinc-700 hover:border-pink-500 transition px-6 py-3 rounded-xl">
             Email
           </button>
 

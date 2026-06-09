@@ -1,4 +1,25 @@
+import { useEffect, useState } from "react";
+
 export default function Hero() {
+
+  const text = "Jasminy";
+
+  const [displayText, setDisplayText] = useState("");
+  useEffect(() => {
+    let index = 0;
+
+    const interval = setInterval(() => {
+      setDisplayText(text.slice(0, index + 1));
+      index++;
+
+      if (index === text.length) {
+        clearInterval(interval);
+      }
+    }, 180);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section
       id="inicio"
@@ -15,17 +36,17 @@ export default function Hero() {
           </span>
 
           <h1 className="text-5xl md:text-7xl font-bold mt-4 leading-tight">
-            Olá, eu sou
+            Olá, eu sou a
             <br />
             <span className="text-pink-500">
-              Jasminy
+              {displayText}
+              <span className="animate-pulse">|</span>
             </span>
           </h1>
 
           <p className="mt-6 text-zinc-400 text-lg leading-relaxed max-w-xl">
             Finalizando o curso de Informática para Internet e
-            desenvolvendo aplicações modernas utilizando React,
-            Node.js, Express e MySQL.
+            desenvolvendo aplicações modernas.
           </p>
 
           <div className="flex gap-4 mt-10">
@@ -62,15 +83,14 @@ export default function Hero() {
 
             <pre className="text-sm overflow-x-auto">
 
-{`const jasminy = {
+              {`const jasminy = {
   role: "Full Stack",
   course: "Informática para Internet",
 
   skills: [
     "React",
-    "Node.js",
-    "MySQL",
-    "Tailwind"
+    "Tailwind",
+    "..."
   ],
 
   projects: 10,

@@ -8,10 +8,6 @@ const stats = [
     label: "Tecnologias",
   },
   {
-    value: "100+",
-    label: "Commits",
-  },
-  {
     value: "100%",
     label: "Dedicação",
   },
@@ -19,10 +15,10 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="py-32 px-6">
+    <section className="py-15 px-6">
       <div className="max-w-7xl mx-auto">
 
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
 
           {stats.map((stat) => (
             <div
