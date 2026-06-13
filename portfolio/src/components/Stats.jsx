@@ -1,14 +1,24 @@
+import Counter from "./Counter";
+
 const stats = [
   {
-    value: "10+",
+    value: 10,
+    suffix: "+",
     label: "Projetos",
   },
   {
-    value: "15+",
+    value: 15,
+    suffix: "+",
     label: "Tecnologias",
   },
   {
-    value: "100%",
+    value: 100,
+    suffix: "+",
+    label: "Commits",
+  },
+  {
+    value: 100,
+    suffix: "%",
     label: "Dedicação",
   },
 ];
@@ -26,7 +36,10 @@ export default function Stats() {
               className="bg-[#111118] border border-zinc-800 rounded-3xl p-8 text-center"
             >
               <h3 className="text-5xl font-bold text-pink-500">
-                {stat.value}
+                <Counter
+                  end={stat.value}
+                  suffix={stat.suffix}
+                />
               </h3>
 
               <p className="mt-3 text-zinc-400">
