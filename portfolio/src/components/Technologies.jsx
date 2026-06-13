@@ -24,7 +24,6 @@ const tools = [
   "GitHub",
   "Figma",
   "Vercel",
-  "Supabase",
   "VS Code",
 ];
 
